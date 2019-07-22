@@ -68,6 +68,10 @@ public class ConditionalDemoConfiguration {
      * TODO (3) sayYesComponentOnBean 빈이 생성되도록 SayNoComponent 빈을 선언해 주세요.
      * TODO (3) sayYesComponentOnBeanウィーンが生成されるようにSayNoComponentウィーンを宣言してください。
      */
+    @Bean
+    public SayNoComponent sayNoComponent() {
+        return new SayNoComponent("sayNoComponent");
+    }
 
     /**
      * 프로젝트에 SayNoComponent 타입의 빈이 등록되어 있으면 아래 빈을 생성합니다.
