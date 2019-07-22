@@ -17,7 +17,7 @@ public class ConditionalDemoConfiguration {
 
             // Hint property 가져 오기 conditionContext.getEnvironment().getProperty("test1")
             // Hint property 持って来るconditionContext.getEnvironment().getProperty( "test1")
-            return false;
+            return conditionContext.getEnvironment().containsProperty("test1");
         }
     }
 
