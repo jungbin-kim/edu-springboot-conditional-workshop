@@ -127,7 +127,7 @@ public class ConditionalDemoConfiguration {
      * @return
      */
     @Bean
-    @ConditionalOnProperty(name="")
+    @ConditionalOnProperty(name="test2")
     public SayYesComponent sayYesComponentOnProperty() {
         return new SayYesComponent("ConditionalOnProperty");
     }
